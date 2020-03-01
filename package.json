@@ -8,27 +8,31 @@
   "scripts": {
     "build": "gatsby build",
     "format": "prettier --write \"**/*.{js,jsx,json,md}\"",
-    "start": "gatsby develop",
+    "start": "gatsby develop --host 0.0.0.0",
     "serve": "gatsby serve",
     "clean": "gatsby clean",
     "test": "jest"
   },
   "devDependencies": {
-    "gatsby": "^2.19.7",
-    "gatsby-image": "^2.2.39",
-    "gatsby-plugin-manifest": "^2.2.39",
-    "gatsby-plugin-react-helmet": "^3.1.21",
-    "gatsby-plugin-sharp": "^2.4.3",
+    "@types/classnames": "^2.2.9",
+    "gatsby": "^2.19.23",
+    "gatsby-image": "^2.2.41",
+    "gatsby-plugin-manifest": "^2.2.42",
+    "gatsby-plugin-postcss": "^2.1.20",
+    "gatsby-plugin-purgecss": "^4.0.1",
+    "gatsby-plugin-react-helmet": "^3.1.22",
+    "gatsby-plugin-sharp": "^2.4.5",
     "gatsby-plugin-typescript": "^2.1.27",
-    "gatsby-source-filesystem": "^2.1.46",
-    "gatsby-transformer-sharp": "^2.3.13",
+    "gatsby-source-filesystem": "^2.1.48",
+    "gatsby-transformer-sharp": "^2.3.16",
     "jest": "^25.1.0",
     "prettier": "^1.19.1",
-    "react": "^16.12.0",
-    "react-dom": "^16.12.0",
+    "react": "^16.13.0",
+    "react-dom": "^16.13.0",
     "react-helmet": "^5.2.1",
+    "tailwindcss": "^1.2.0",
     "ts-jest": "^25.2.1",
-    "typescript": "^3.8.2"
+    "typescript": "^3.8.3"
   },
   "repository": {
     "type": "git",
@@ -41,11 +45,15 @@
     "semi": true,
     "printWidth": 120,
     "tabWidth": 2,
-    "useTabs": false
+    "useTabs": false,
+    "trailingComma": "es5"
   },
   "jest": {
     "preset": "ts-jest",
     "testEnvironment": "node",
     "rootDir": "src"
+  },
+  "dependencies": {
+    "classnames": "^2.2.6"
   }
 }
